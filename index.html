@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Przelicznik walut</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+			</div>
+			<div class="currency">Przelicznik walut</div>
+		</header>
+
+		<main>
+			<div class="getCurrency">
+				<form>
+					<input type="number" class="value" min="0" placeholder="Ile PLN chcesz przeliczyć?" autofocus>
+					<select id="currencyStart">
+					</select>
+					<button type="submit" class="btn">Przelicz</button>
+				</form>
+				<div class="setCurrency">
+					To <span class="currencyValue">0</span> PLN
+				</div>
+			</div>
+			<div class="errors"></div>
+		</main>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

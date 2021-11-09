@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.logo {
+	min-width: 25px;
+	min-height: 25px;
+	margin: 10px;
+	background-image: url("img/dollar.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.setCurrency {
+	font-size: 18px;
+}
+
+input,
+#currencyStart {
+	min-width: 200px;
+	padding: 5px;
+}
+
+button.btn {
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 60px;
+	letter-spacing: 2px;
+	font-size: 16px;
+	transition: .4s;
+	font-family: 'Verdana', sans-serif;
+	background: rgb(239, 239, 239);
+	border: none;
+}
+
+button.btn:hover {
+	background: rgb(89, 134, 202);
+}
+
+.errors {
+	font-weight: bold;
+	color: #e24545;
+	letter-spacing: 1px;
+}
+
+.loader:after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 6px solid gold;
+	border-color: gold transparent gold transparent;
+	animation: loader 1.2s linear infinite;
+	position: absolute;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
