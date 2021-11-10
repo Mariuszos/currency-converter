@@ -59,7 +59,6 @@ async function getCurrency(form) {
 			handleError("Wystąpił błąd podczas próby pobierania danych");
 		});
 	}, 800);
-
 };
 
 async function fetchUrl(url) {
