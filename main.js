@@ -1,4 +1,4 @@
-const api = "https://api.nbp.pl/api/exchangerates/rates/C",
+const api = "http://api.nbp.pl/api/exchangerates/rates/C",
 	format = "?format=json";
 
 (function () {
